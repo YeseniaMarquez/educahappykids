@@ -71,9 +71,17 @@ main {grid-area: main;}
 footer{grid-area: footer;}
 header,ul,footer{display: flex;}
 .gridIndex footer{justify-content: space-around;}
-@media only screen and (max-width: 768px){
-	li{padding: 5px;}
-	ul{padding: 0;}
+/*MEDIA QUERIES MOBILE*/
+@media only screen and (max-width: 768px)
+{.gridIndex{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}		
 }
 table tr {
         display: flex;
@@ -89,25 +97,9 @@ table th{
     padding: 1em;
     margin-bottom: 1em;
 }
-.gridGaleria{
-	display: grid;
-	grid-template-areas: 
-	"logo nav nav"
-	"encabezado encabezado encabezado"
-	"imgMainCuadradaIzq imgMainCuadradaDer imgMainVertical"
-	"imgMainHorizontal imgMainHorizontal imgMainVertical"
-	"footer footer footer";
-	grid-template-columns: 33% 33% 33%;
-	grid-template-rows: auto auto auto auto auto;
-}
-.logo{grid-area: logo;}
-nav{grid-area: nav;}
-.imgMainCuadradaIzq{grid-area: imgMainCuadradaIzq;}
-.imgMainCuadradaDer{grid-area: imgMainCuadradaDer;}
-.imgMainVertical{grid-area: imgMainVertical;}
-.imgMainHorizontal{grid-area: imgMainHorizontal;}
-.imgMainCuadradaIzq img,.imgMainCuadradaDer img, .imgMainVertical img, .imgMainHorizontal img{width: 100%;}
-@media only screen and (max-width: 768px)
+/*MEDIA QUERIES DESKTOP*/
+@media only screen and (min-width: 1024px)
+
 .transition{
 	width: 400px;
 	transition: all 1s;
