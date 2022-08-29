@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EducaHappyKids</title>
-	<link rel="stylesheet" href="css/estilo.css">	
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilo.css">
+	<title>EducaHappyKids</title>
 </head>
 <body class="bgcolor">
 	<div class="gridIndex">
@@ -30,10 +31,11 @@
 			<h1>BIENVENIDOS</h1>
 		</div>
 			<div class="texto">
-				<h3>Soy Yesenia Márquez</h3>
-				<h3>Educadora de Párvulos especializada en Inglés y Matemáticas Inicial</h3>
+				<h3 data-aos="flip-up">Soy Yesenia Márquez</h3>
+				<h3 data-aos="flip-up">Educadora de Párvulos especializada en Inglés y Matemáticas Inicial</h3>
 				<h3>Te invito a conocer mi página</h3>
 			</div>
+		<div data-aos="zoom-in-down">
 			<div class="imagen">
 				<img width="200px"src="assets/img/yo.png">
 			</div>
@@ -68,7 +70,7 @@
 <section>
 	<div>
         <h1>SERVICIOS</h1>
-		<h3>Asesoria personalizada:"Roles de los padres en crianza respetuosa"</h3> 
+		<h3 data-aos="fade-down-left">Asesoria personalizada:"Roles de los padres en crianza respetuosa"</h3> 
 		<p>Te ofrezco mi servicio de asesoría personalizada para identificar tu situación familiar, tus preocupaciones y actuar familiar, te guio y oriento en el rol que debes desarrollar frente a distintas experiencias de crianza y entrego consejos, recursos y seguimiento de tu caso en una crianza efectiva y positiva.</p>
 		<p class="texto">Valor:$15.000</p>	
 	</div>
@@ -79,7 +81,7 @@
         <input style="margin: 20px" type="submit" value="¡Agenda aquí!">   
     </div>
 	<div>
-        <h3>Asesoria personalizada:"Actividades educativas"</h3>
+        <h3 data-aos="fade-down-left">Asesoria personalizada:"Actividades educativas"</h3>
 		<p>Esta asesoría consta en crear actividades diarias, semanales o mensuales a los niños y niñas según sus necesidades educativas, estan pueden ir orientadas en el área de lenguaje, matemátematicas, ciencias e inglés, según el interés de cada familia, consiste en entregar recursos educativos y seguimiento online de las actividades con el niño/a.</p>
 		<p class="texto">Valor:$20.000</p>
 	</div>
@@ -94,12 +96,12 @@
 <div class="texto">
 		<h1>TIENDA</h1>
 </div>
-    <h3>Juguetes</h3>
+    <h3 data-aos="fade-down-left">Juguetes</h3>
     <ul>
 	<div class="imagen">
 		<table cellpadding="10" cellspacing="8">
 			<tr>
-				<p>Educativos</p>
+				<p data-aos="fade-down-left">Educativos</p>
 				<th>Cilindro de Cálculo</th>
 				<td><img width="200px"src="assets/img/cilindrodecalculo.jpg"></td>
 				<td><input type="submit" value="$8.000"></td>
@@ -115,7 +117,7 @@
 	<div class="imagen">
 	<table cellpadding="10" cellspacing="8">
 			<tr>
-				<p>Construcción</p>
+				<p data-aos="fade-down-left">Construcción</p>
 				<th>Caja de Encaje</th>
 				<td><img width="200px"src="assets/img/cajadeencaje.png"></td>
 				<td><input type="submit" value="$8.000"></td>
@@ -175,6 +177,9 @@
 		<img width="100px"src="assets/img/logo.png">
 	</div>
 </footer>
-    </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
 </body>
 </html>
