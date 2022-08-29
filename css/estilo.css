@@ -99,7 +99,6 @@ table th{
 }
 /*MEDIA QUERIES DESKTOP*/
 @media only screen and (min-width: 1024px)
-
 .transition{
 	width: 400px;
 	transition: all 1s;
