@@ -108,7 +108,21 @@ nav{grid-area: nav;}
 .imgMainHorizontal{grid-area: imgMainHorizontal;}
 .imgMainCuadradaIzq img,.imgMainCuadradaDer img, .imgMainVertical img, .imgMainHorizontal img{width: 100%;}
 @media only screen and (max-width: 768px)
-
+.transition{
+	width: 400px;
+	transition: all 1s;
+}
+.transition:hover{
+	width: 400px;
+	cursor: pointer;
+	background-color: blueviolet;
+	font-size: 100px;
+}
+h1{
+	color: rgb(253, 237, 9);
+	padding: 10px;
+	transition: color 5s, padding 1s;
+}
 
 
 
