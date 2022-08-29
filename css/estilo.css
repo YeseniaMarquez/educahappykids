@@ -123,6 +123,28 @@ h1{
 	padding: 10px;
 	transition: color 5s, padding 1s;
 }
-
-
+@keyframes desaparecer{
+	0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+.animation{
+	animation-name: desaparecer;
+	animation-iteration-count: 2;
+	animation-duration: 3s;
+	animation-delay: 5s;
+}
+@keyframes movimiento{
+	0%{transform: translateX(100px);}
+	25%{transform: skew(60deg,60deg);}
+	50%{transform: rotate(45deg);}
+	75%{transform: translate(100px, 100px);}
+	100%{transform: scale(2,2);}
+}
+.animacionImg{
+	animation-name: movimiento;
+	animation-iteration-count: 1;
+	animation-timing-function:ease-in-out;
+	animation-duration: 10s;
+	animation-delay: 5s;
+}
 
